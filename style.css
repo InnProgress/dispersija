@@ -1,0 +1,59 @@
+table, th, td {
+  border: 1px solid black;
+}
+table {
+  border-collapse: collapse;
+}
+table button {
+  color: red;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  background-color: #222831;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.main-theme {
+  background-color: #393e46;
+  color: white;
+  min-height: 60vh;
+}
+
+div.input-block {
+  display: block;
+  margin: 15px 0;
+}
+
+input:not(:disabled), select {
+  border: 2px solid #222831;
+  padding: 2px;
+  border-radius: 3px;
+  background-color: #B55400;
+}
+
+#additionalResult {
+  font-size: 23px;
+}
+
+/*  FRACTIONS STYLE  */
+.f {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.n {
+    border-bottom: 1px solid white;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dispersijos apskaiciavimas</title>
+  </head>
+  <body>
+    <div class="container main-theme">
+
+      <div id="table">
+
+      </div>
+
+
+      <form onsubmit="addVal(event)">
+
+        <div class="input-block">
+          X:
+          <input type="number" step="any" id="x-value">
+        </div>
+
+        <div class="input-block">
+          P:
+          <input type="number" step="any" id="p-value">
+        </div>
+
+        <button>Pridėti</button>
+      </form>
+
+
+      <h2>Rezultatas</h2>
+
+      <div class="input-block">
+        Ex:
+        <input type="text" id="ex-result" disabled>
+      </input>
+
+      <div class="input-block">
+        Dx:
+        <input type="text" id="dx-result" disabled>
+      </input>
+
+      <h2>Sprendimas</h2>
+      <div id="ex-calculation">
+
+      </div>
+      <div id="dx-calculation">
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
