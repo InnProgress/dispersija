@@ -1,6 +1,6 @@
 # Dispertion calculator
 
-<h3>DEMO: https://innprogress.github.io/dispersija/</h3
+<h3>DEMO: https://innprogress.github.io/dispertion-calculator/</h3
   
 Input the X and P(X) values to fill table needed to calculate mathematical expectation and dispertion
   
