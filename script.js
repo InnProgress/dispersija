@@ -13,6 +13,12 @@ let valuesTable = [{
 let dx = 0;
 let ex = 0;
 
+const exResultElement = document.getElementById('ex-result');
+const exCalculationElement = document.getElementById('ex-calculation');
+const dxResultElement = document.getElementById('dx-result');
+const dxCalculationElement = document.getElementById('dx-calculation');
+const tableElement = document.getElementById('table');
+
 recalc();
 
 function recalc() {
@@ -38,8 +44,8 @@ function calculateEx() {
     } else first = false;
     calculationString += valuesTable[i].x + ' * ' + valuesTable[i].px;
   }
-  document.getElementById('ex-result').value = ex;
-  document.getElementById('ex-calculation').innerHTML = calculationString + ' = ' + ex;
+  exResultElement.value = ex;
+  exCalculationElement.innerHTML = calculationString + ' = ' + ex;
 }
 function calculateDx() {
 
@@ -62,8 +68,8 @@ function calculateDx() {
     calculationString += `(${valuesTable[i].x} - ${ex})<sup>2</sup> * ${valuesTable[i].px}`;
     additionalCalculation += tempCalc;
   }
-  document.getElementById('dx-result').value = Math.sqrt(dx);
-  document.getElementById('dx-calculation').innerHTML = calculationString + ' = ' + additionalCalculation + ' = ' + dx + '<br>&#x221A;Dx = ' + Math.sqrt(dx);
+  dxResultElement.value = Math.sqrt(dx);
+  dxCalculationElement.innerHTML = calculationString + ' = ' + additionalCalculation + ' = ' + dx + '<br>&#x221A;Dx = ' + Math.sqrt(dx);
 }
 function addVal(event) {
   event.preventDefault();
@@ -97,7 +103,7 @@ function updateTable() {
     editingText += '<td><button onclick="deleteObj(' + i + ')">X</button></td>';
   }
 
-  document.getElementById('table').innerHTML = `
+  tableElement.innerHTML = `
   <table>
     <tbody>
       <tr>
