@@ -20,3 +20,11 @@ Deleting data from table:
 - Click on 'X' symbol on the wanted to delete value pair
 
 ![deletingdata](https://i.imgur.com/25AhgS0.png)
+
+## Tasks
+- [ ] Make possible to enter fraction to the table
+- [ ] Add parenthesis to negative numbers
+- [ ] Make it easier to add new data to table, maybe refuse using inputs under the table, add them in table at the end
+- [ ] Round off the numbers with many numbers after comma
+
+Also check out another calculator I created - [combination and permutation calculator](https://github.com/InnProgress/combination-and-permutation-calculator)
